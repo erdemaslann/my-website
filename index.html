@@ -1,25 +1,64 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Erdem Aslan | Web & Game Developer</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="container">
-    <img src="images/my_photo.jpg" width="150" alt="Erdem Aslan" class="profile" />
-    <h1>Erdem Aslan</h1>
-    <p class="subtitle">Web & Game Developer</p>
-    <p class="description">
-      Hayal gücünü kodla birleştirmeye çalışan bir geliştiriciyim. Web teknolojileri, 2D oyunlar ve hikaye anlatımıyla ilgileniyorum.
-    </p>
 
-    <div class="buttons">
-      <a href="https://github.com/erdemaslann" target="_blank">GitHub</a>
-      <a href="#">Projelerim</a>
-      <a href="mailto:erdem@example.com">İletişim</a>
-    </div>
+
+<body>
+
+  <nav class="navbar">
+    <a href="#" class="logo">Portfolio</a>
+    <ul>
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <div class="bars-animation">
+    <div class="bar" style="--i:6;"></div>
+    <div class="bar" style="--i:5;"></div>
+    <div class="bar" style="--i:4;"></div>
+    <div class="bar" style="--i:3;"></div>
+    <div class="bar" style="--i:2;"></div>
+    <div class="bar" style="--i:1;"></div>
   </div>
+
+  <section class="home">
+    <div class="home-info">
+      <h1>Welcome to My Portfolio</h1>
+      <h2>I'm a
+        <span style="--i:2;" data-text="Fullstack Developer">Fullstack Developer</span>
+        <span style="--i:1;" data-text="Game Developer">Game Developer</span>
+      </h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <div class="btn-sci">
+        <a href="#" class="btn">Download CV</a>
+        <div class="sci">
+          <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#"><ion-icon name="game-controller-outline"></ion-icon></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-img">
+      <div class="img-box">
+        <div class="img-item">
+          <img src="./images/my_photo.jpg" alt="my photo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
