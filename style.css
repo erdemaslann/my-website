@@ -247,3 +247,53 @@ a {
         transform: translateY(0%);
     }
 }
+
+/* 992 px ve altı: tablet + dikey telefonlar */
+@media (max-width: 992px) {
+
+  /* NAVBAR */
+  .navbar {                 /* zaten fixed; kenar boşluklarını azalt */
+    padding: 15px 5%;
+  }
+  .navbar ul li {
+    margin-left: 20px;      /* menü öğeleri sıkışmasın */
+  }
+  .navbar ul li a {         /* yazı biraz küçülsün */
+    font-size: 18px;
+  }
+
+  /* ANA BLOK */
+  .home {                   /* yatay yerine dikey yerleşim */
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    padding: 120px 5% 40px; /* fixed navbar’a çarpmasın */
+    height: auto;           /* dikey büyüyebilsin */
+  }
+
+  /* FOTOĞRAF */
+  .home-img .img-box {
+    width: 60vw;            /* ekranın %60’ı kadar */
+    height: 60vw;
+    margin-left: 0;         /* ortala */
+  }
+
+  /* METİN BOYUTLARI */
+  .home-info h1 { font-size: 40px; }
+  .home-info h2 { font-size: 24px; }
+  .home-info p  { font-size: 15px; }
+}
+
+/* 576 px ve altı: küçük telefonlar */
+@media (max-width: 576px) {
+  .home-info h1 { font-size: 32px; }
+  .home-info h2 { font-size: 20px; }
+
+  .navbar ul li {
+    margin-left: 12px;
+  }
+  .navbar ul li a {
+    font-size: 16px;
+  }
+}
